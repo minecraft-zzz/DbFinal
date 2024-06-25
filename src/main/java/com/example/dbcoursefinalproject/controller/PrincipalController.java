@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class PrincipalController {
     @Autowired
@@ -17,5 +19,9 @@ public class PrincipalController {
         return principalMapper.getPrincipalById(id);
     }
 
+    @GetMapping("/api/principal/getInfoByname")
+    public List<Principal> getInfoByName(@RequestParam String name){
+        return principalMapper.getPrincipalsByName(name);
+    }
 
 }

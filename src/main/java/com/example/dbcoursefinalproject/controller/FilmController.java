@@ -78,4 +78,9 @@ public class FilmController {
         ret.put("comments",comments);
         return ret;
     }
+
+    @GetMapping("/api/movies/advanced_search")
+    public List<Film> advanceSearch(String name,int startYear,int endYear,String type,String region){
+        return filmMapper.advanceSearch(name,startYear,endYear,type,region);
+    }
 }

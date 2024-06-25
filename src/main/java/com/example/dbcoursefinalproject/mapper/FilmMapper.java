@@ -36,4 +36,7 @@ public interface FilmMapper {
 
     @Select("select * from comments where filmId = #{id}")
     public List<Comment> getCommentsByFilmId(String id);
+
+    @Select("SELECT * FROM  films WHERE MATCH(title) AGAINST(#{name} IN BOOLEAN MODE) AND startYear BETWEEN #{startYear} AND #{endYear} AND type like CONCAT('%',#{type},'%')  AND region like CONCAT('%',#{region},'%') ORDER BY rating DESC,numberOfGraders DESC LIMIT 100")
+    public List<Film> advanceSearch(String name,int startYear,int endYear,String type,String region);
 }
