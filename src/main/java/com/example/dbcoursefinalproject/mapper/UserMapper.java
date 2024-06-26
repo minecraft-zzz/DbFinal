@@ -15,7 +15,7 @@ public interface UserMapper {
     @Insert("insert into users values(#{userId},#{userName},#{phoneNumber},#{email},#{password},#{isMuzzled},#{userIntroduction},#{userImg},#{administrator})")
     public void regist(User user);
 
-    @Select("select * from users where username = #{username} and password = #{password}")
+    @Select("select * from users where username = #{userName} and password = #{password}")
     public User login(User user);
 
     @Insert("insert into comments values(#{commentId},#{userId},#{filmId},#{content})")

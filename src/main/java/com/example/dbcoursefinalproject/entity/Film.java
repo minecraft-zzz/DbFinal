@@ -2,12 +2,12 @@ package com.example.dbcoursefinalproject.entity;
 
 public class Film {
     String workId;
-    String orderding;
+    String ordering;
     String title;
     String region;
     String language;
     String type;
-    int startyear;
+    int startYear;
     int runtimeMinutes;
     String genres;
     String url;
@@ -24,12 +24,12 @@ public class Film {
         this.workId = workId;
     }
 
-    public String getOrderding() {
-        return orderding;
+    public String getOrdering() {
+        return ordering;
     }
 
-    public void setOrderding(String orderding) {
-        this.orderding = orderding;
+    public void setOrdering(String ordering) {
+        this.ordering = ordering;
     }
 
     public String getTitle() {
@@ -64,12 +64,12 @@ public class Film {
         this.type = type;
     }
 
-    public int getStartyear() {
-        return startyear;
+    public int getStartYear() {
+        return startYear;
     }
 
-    public void setStartyear(int startyear) {
-        this.startyear = startyear;
+    public void setStartYear(int startyear) {
+        this.startYear = startyear;
     }
 
     public int getRuntimeMinutes() {
@@ -132,12 +132,12 @@ public class Film {
     public String toString() {
         return "Film{" +
                 "workId='" + workId + '\'' +
-                ", orderding='" + orderding + '\'' +
+                ", orderding='" + ordering + '\'' +
                 ", title='" + title + '\'' +
                 ", region='" + region + '\'' +
                 ", language='" + language + '\'' +
                 ", type='" + type + '\'' +
-                ", startyear=" + startyear +
+                ", startyear=" + startYear +
                 ", runtimeMinutes=" + runtimeMinutes +
                 ", genres='" + genres + '\'' +
                 ", url='" + url + '\'' +
