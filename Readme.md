@@ -102,13 +102,13 @@ nohup java -jar DbcourseFinalProject-0.0.1-SNAPSHOT.jar  > logName.log 2>&1 &
 
 ### 后端功能展示
 
-![image-20240625234904344](.\ReadmeImg\image-20240625234904344.png)
+![image-20240625234904344](./ReadmeImg/image-20240625234904344.png)
 
-![image-20240625234913925](.\ReadmeImg\image-20240625234913925.png)
+![image-20240625234913925](./ReadmeImg/image-20240625234913925.png)
 
-![image-20240625234853472](.\ReadmeImg\image-20240625234853472.png)
+![image-20240625234853472](./ReadmeImg/image-20240625234853472.png)
 
-![image-20240625234806508](.\ReadmeImg\image-20240625234806508.png)
+![image-20240625234806508](./ReadmeImg/image-20240625234806508.png)
 
 ### 项目备注/参考资料
 
