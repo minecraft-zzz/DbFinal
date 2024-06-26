@@ -18,7 +18,7 @@ public interface UserMapper {
     @Select("select * from users where username = #{userName} and password = #{password}")
     public User login(User user);
 
-    @Insert("insert into comments values(#{commentId},#{userId},#{filmId},#{content})")
+    @Insert("insert into comments values(#{commentId},#{userName},#{filmId},#{content})")
     public void comment(Comment comment);
 
     @Insert("insert into favourites values(#{userId},#{filmId})")

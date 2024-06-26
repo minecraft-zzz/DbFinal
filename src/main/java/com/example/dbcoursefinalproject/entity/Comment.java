@@ -2,7 +2,7 @@ package com.example.dbcoursefinalproject.entity;
 
 public class Comment {
     String commentId;
-    String userId;
+    String userName;
     String filmId;
     String content;
 
@@ -14,12 +14,12 @@ public class Comment {
         this.commentId = commentId;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getFilmId() {

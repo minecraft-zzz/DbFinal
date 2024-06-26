@@ -1,3 +1,5 @@
+
+
 # 数据库大作业后端
 
 ### 项目描述
@@ -61,6 +63,12 @@ systemctl list-unit-files grep mysqld
 nohup java -jar DbcourseFinalProject-0.0.1-SNAPSHOT.jar  > logName.log 2>&1 &
 ```
 
+如果发现启动失败，一般是由于8080端口被原来的版本的代码占用了，使用下列代码查看占用的进程，杀掉即可重启
+
+```shell
+ss -tulnp
+```
+
 至此后端部署已经完成
 
 
@@ -102,13 +110,13 @@ nohup java -jar DbcourseFinalProject-0.0.1-SNAPSHOT.jar  > logName.log 2>&1 &
 
 ### 后端功能展示
 
-![image-20240625234904344](ReadmeImg\image-20240625234904344.png)
+![image-20240626223402629](.\ReadmeImg\image-20240626223402629.png)
 
-![image-20240625234913925](ReadmeImg\image-20240625234913925.png)
+![image-20240625234904344](.\ReadmeImg\image-20240625234904344.png)
 
-![image-20240625234853472](ReadmeImg\image-20240625234853472.png)
+![image-20240625234913925](.\ReadmeImg\image-20240625234913925.png)
 
-![image-20240625234806508](ReadmeImg\image-20240625234806508.png)
+![image-20240625234806508](.\ReadmeImg\image-20240625234806508.png)
 
 ### 项目备注/参考资料
 
